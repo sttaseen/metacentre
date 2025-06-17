@@ -1,0 +1,285 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 20px;
+    border-bottom: none; /* Remove the grey line under the nav bar */
+    position: relative;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 10px;
+}
+
+.logo {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.logo img {
+    max-width: 120px;
+    height: auto;
+    padding-top: 0;
+    padding-left: 0;
+    display: block;
+}
+
+.title {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.title h1 {
+    margin: 0;
+    font-size: 32px; /* Further increased font size for main heading */
+    color: #1b12cc; /* Blue color for heading */
+    font-family: 'Cambria', serif;
+    padding-top: 20px;
+}
+
+.title p {
+    margin: 0;
+    font-size: 16px;
+    color: #666;
+    font-family: 'Cambria', serif;
+}
+
+/* Navbar styles moved from index.html */
+nav {
+    display: flex;
+    justify-content: center;
+    width: 100vw; /* Ensure nav spans the viewport width */
+    margin-top: 50px;
+    position: relative;
+}
+
+.navbar {
+    list-style-type: none;
+    background-color: #000080;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 0; /* Remove gap to avoid space at ends */
+    width: 100vw; /* Ensure navbar spans the viewport width */
+    justify-content: center;
+}
+
+.navbar > li {
+    flex: 1 1 0;
+    min-width: 0;
+    text-align: center;
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 14px 14px;
+}
+
+.navbar a:hover {
+    background-color: transparent;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #000080;
+    width: 100%; /* Match parent tab width exactly */
+    left: 0; /* Align with left edge of parent */
+    top: 100%; /* Position directly below parent */
+    text-align: left;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.dropdown-menu a {
+    padding: 12px 16px 12px 16px;
+    padding-right: 24px; /* Added right padding */
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown {
+    position: relative;
+    min-width: 170px; /* Ensure parent li is same width as dropdown */
+}
+
+.services {
+    text-align: right;
+    font-size: 14px;
+    color: #333;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.images img {
+    max-width: none;
+    width: auto;
+    height: 220px; /* Set a fixed height for all images */
+    object-fit: cover; /* Center crop the image */
+    object-position: center; /* Center the crop */
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    display: block;
+}
+
+.helm-images {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.helm-images img {
+    height: 220px; /* Set a fixed height for all images */
+    width: 220px; /* Set a fixed width for uniformity, adjust as needed */
+    object-fit: cover; /* Center crop the image */
+    object-position: center; /* Center the crop */
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    display: block;
+}
+
+.content {
+    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.content h2 {
+    color: #4f46e5; /* Blue color for subheadings */
+}
+
+.content p {
+    color: black;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.content ul li {
+    margin-bottom: 15px; /* Add space between list items */
+}
+
+.content ul li strong {
+    color: #2c23db; /* Same blue color as h2 headings */
+    font-weight: bold;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 80px;
+    margin: 20px 0;
+}
+
+.logos img {
+    object-fit: contain;
+    max-width: 90px;
+    height: auto;
+    flex: 1;
+}
+
+.client-login {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 14px;
+    color: #333;
+    text-align: right;
+    padding: 10px 20px;
+    font-size: 1.0em;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.client-login > a {
+    color: #1443a8;
+    text-decoration: none;
+}
+
+.client-login > a:hover {
+    text-decoration: underline;
+}
+
+/* Adding style for maritime text */
+.maritime-text {
+    font-size: 18px;
+    color: #1b12cc; /* Blue color */
+    line-height: 1.8;
+    padding: 10px;
+    background-color: #e0e7ff; /* Light blue background */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Reduce spacing between h3 and following paragraphs in articles */
+article h3 {
+    margin-bottom: 5px; /* Reduce bottom margin of h3 */
+}
+
+article h3 + p {
+    margin-top: 0; /* Remove top margin of first paragraph after h3 */
+}
+
+article p {
+    margin-top: 3px; /* Reduce top margin for all paragraphs in articles */
+    margin-bottom: 3px; /* Reduce bottom margin for all paragraphs in articles */
+}
+
+/* Increase gap between the last paragraph and second to last paragraph in articles */
+article p:nth-last-child(2) {
+    margin-bottom: 20px; /* Increase bottom margin of second to last paragraph */
+}
+
+/* Add gap between articles */
+article {
+    margin-bottom: 40px; /* Add space between each article */
+}
+
+/* Remove gaps between paragraphs in footer */
+footer h3 {
+    margin-bottom: 5px; /* Reduce bottom margin of h3 in footer */
+}
+
+footer h3 + p {
+    margin-top: 0; /* Remove top margin of first paragraph after h3 in footer */
+}
+
+footer p {
+    margin-top: 3px; /* Reduce top margin for all paragraphs in footer */
+    margin-bottom: 3px; /* Reduce bottom margin for all paragraphs in footer */
+}
+
+@media (max-width: 850px) {
+    .logo img {
+        display: none;
+    }
+}
